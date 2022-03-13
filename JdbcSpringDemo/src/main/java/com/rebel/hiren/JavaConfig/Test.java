@@ -11,8 +11,17 @@ public class Test {
 	 ApplicationContext con = new AnnotationConfigApplicationContext(Configuration.class);
 		StudentDaoImpl st = con.getBean("data", StudentDaoImpl.class);
 	    
-		Student std = new Student(1, "Hiren", "Devmurari");
-		st.insert(std);
+		Student std = new Student(2,"hiren", "B happy and Smile");
+	//	st.insert(std);
+		
+		
+		st.update(std);
+		
+	
+		// we can delete record using their ids
+		//	st.delete(1);
+		
+	
 		
 		
 		
